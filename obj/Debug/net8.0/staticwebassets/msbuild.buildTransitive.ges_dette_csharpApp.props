@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ges_dette_csharpApp.props" />
+</Project>

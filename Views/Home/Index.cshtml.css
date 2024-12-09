@@ -1,0 +1,44 @@
+.stats {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f8f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10);
+    
+
+
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ajouté pour centrer verticalement */
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 500px;
+}
+
+.stat-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.stat-desc {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+.text-secondary {
+    color: #3b82f6;
+}

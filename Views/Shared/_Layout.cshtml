@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ges_dette</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ges_dette_csharpApp.styles.css" asp-append-version="true" />
+    
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="logo">
+               
+                <h1>ECOLE 221</h1>
+            </div>
+            
+                </a>
+                
+                <a href="http://localhost:5153/etudiant/mescours" class="menu-item">
+                    <i class="fas fa-box"></i>
+                    <span>Mes Cours</span>
+                </a>
+                <a href="http://localhost:5153/etudiant/mesabsences" class="menu-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Mes Absences</span>
+                </a>
+               
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content-container">
+            
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+           
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client List</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Index.cshtml.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="stats shadow">
+        <div class="stat place-items-center">
+            <div class="stat-title"> Total COURS</div>
+            <div class="stat-value">5</div>
+            <div class="stat-desc">From January 1st to February 1st</div>
+        </div>
+
+        <div class="stat place-items-center">
+            <div class="stat-title">Total Etudiant</div>
+            <div class="stat-value text-secondary">1</div>
+            <div class="stat-desc text-secondary"></div>
+        </div>
+
+        <div class="stat place-items-center">
+    <div class="stat-title">Nombre d'absences</div>
+    <div class="stat-value">@ViewData["TotalClients"]</div>
+    <div class="stat-desc">10h</div>
+    
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
